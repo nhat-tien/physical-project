@@ -17,14 +17,14 @@ return (
         <button onClick={handleToggle} className='sm:hidden'><Image src={display ? '/close.svg' : '/menu.svg'} width={30} height={30}></Image></button>
         <ul className='sm:flex items-center font-medium hidden'>
           <li className='py-1 px-4 text-lg block rounded-full hover:text-white hover:bg-blue transition-colors'><Link href='/About'>About</Link></li>
-          <li className='py-1 px-4 text-lg block rounded-full hover:text-white hover:bg-blue transition-colors'><Link href='#content'>Content</Link></li>
+          <li className='py-1 px-4 text-lg block rounded-full hover:text-white hover:bg-blue transition-colors'><a href='#document' onClick={handleToggle}>Content</a></li>
         </ul>
       </nav>
     </div>
-      <div className={`sm:hidden transition-all delay-75 absolute top-11 left-0 w-2/3 h-screen bg-white z-20 py-5 ${!display ? '-translate-x-full opacity-0' : ''}`}>
+      <div className={`sm:hidden transition-all delay-75 fixed top-11 left-0 w-2/3 h-screen bg-white z-20 py-5 ${!display ? '-translate-x-full opacity-0' : ''}`}>
       <ul className='flex flex-col items-center font-medium'>
           <li className='my-5 py-1 px-4 text-lg block rounded-full hover:text-white hover:bg-blue transition-colors'><Link href='/About'>About</Link></li>
-          <li className='my-5 py-1 px-4 text-lg block rounded-full hover:text-white hover:bg-blue transition-colors'><Link href='#content'>Content</Link></li>
+          <li className='my-5 py-1 px-4 text-lg block rounded-full hover:text-white hover:bg-blue transition-colors'><a href='#document' onClick={handleToggle}>Content</a></li>
         </ul>
       </div>
     </>
