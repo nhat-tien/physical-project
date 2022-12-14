@@ -26,5 +26,11 @@ a {
     linear-gradient(90deg,rgba(30,64,175, 1) 10%, rgba(245, 246, 252, 0.52) 100%),
     url('../images/teach.jpg');
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .card {
+    @apply block rounded-sm drop-shadow-lg bg-white
   }
 }

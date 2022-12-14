@@ -6,7 +6,7 @@ module.exports = {
   ],
   theme: {
     colors: {
-      'white': '#ffffff',
+      'white': '#e6e7e8',
       'blue': '#1e40af',
       'pink':'rgba(245, 40, 79, 0.25)',
       'yellow': '#ecd872',
@@ -20,6 +20,10 @@ module.exports = {
         nav: '60px'
       },
       backgroundImage: {
+      },
+      screens: {
+        'sm': '577px',
+        'ltsm': {'max' : '576px'}
       }
     },
   },
