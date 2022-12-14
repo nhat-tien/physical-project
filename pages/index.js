@@ -1,14 +1,16 @@
 import Image from 'next/image'
 import Foot from '../components/Foot'
 import HomeNav from '../components/HomeNav'
-
+import bg from '..public/teach.jpg'
 
 export default function Home() {
 
   return (
     <div className='w-ful'>
       <HomeNav />
-      <section className='hero-section w-full h-screen mt-10 relative'>
+      <section className='hero-section w-full h-screen mt-10 relative' style={{backgroundImage:
+    `linear-gradient(90deg,rgba(30,64,175, 1) 10%, rgba(245, 246, 252, 0.52) 100%),
+    url(${bg.src})`}}>
         <div className='absolute sm:top-36 sm:left-52 max-w-md p-3 top-10 '>
           <h1 className='text-white text-5xl'>Lorem ipsum dolor sit amet, consectetur </h1>
           <p className='text-white mt-5 '>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiursmod tempo incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>

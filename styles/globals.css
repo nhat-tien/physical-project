@@ -22,9 +22,6 @@ a {
 
 @layer components {
   .hero-section {
-    background-image:
-    linear-gradient(90deg,rgba(30,64,175, 1) 10%, rgba(245, 246, 252, 0.52) 100%),
-    url(../public/teach.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
