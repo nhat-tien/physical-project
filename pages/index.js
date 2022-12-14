@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Foot from '../components/Foot'
 import HomeNav from '../components/HomeNav'
-import bg from '..public/teach.jpg'
+import bg from '../public/teach.jpg'
 
 export default function Home() {
 
