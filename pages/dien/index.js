@@ -5,7 +5,10 @@ export default function Dien() {
     return (
         <Layout>
         <main className="">
-            <h1>Điện</h1>
+            <h1>Lý Thuyết phần điện</h1>
+            <ul>
+                <li></li>
+            </ul>
         </main>
         </Layout>
     )

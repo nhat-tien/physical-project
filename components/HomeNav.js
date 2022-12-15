@@ -23,7 +23,7 @@ return (
     <div className="w-screen shadow-sm py-3 px-1.5 fixed top-0 bg-white z-30">
       <nav className='flex justify-between mx-auto w-4/5 items-center'>
         <Link href='/'><Image src='/vercel.svg' width={100} height={100} alt='company logo'></Image></Link>
-        <button onClick={handleToggle} className='sm:hidden'><Image src={display ? '/close.svg' : '/menu.svg'} width={30} height={30}></Image></button>
+        <button onClick={handleToggle} className='sm:hidden'><Image src={display ? '/close.svg' : '/menu.svg'} width={30} height={30} alt='toggle'></Image></button>
         <ul className='sm:flex items-center font-medium hidden'>
           <li ><Link href='/' className={`${active == '' ? 'active' : 'hover:text-blue'} py-1 px-4 text-lg block rounded-full border-2 border-transparent hover:border-blue transition-colors`}>Trang chủ</Link></li>
           <li ><Link href='/dien' className={`${active == 'dien' ? 'active' : 'hover:text-blue'} py-1 px-4 text-lg block rounded-full border-2 border-transparent hover:border-blue transition-colors`}>Điện</Link></li>
