@@ -13,7 +13,8 @@ module.exports = {
       'orange': '#ffb338',
       'heavy-blue': '#333353',
       'black-blur': 'rgba(23,32,46,0.5)',
-      'bermuda': '#78dcca',
+      'heavy-orange': '#df7100',
+      'blue-for-text': '#000080',
       'transparent':'transparent'
     },
     extend: {

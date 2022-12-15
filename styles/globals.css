@@ -21,6 +21,9 @@ a {
 }
 
 @layer components {
+  p {
+    @apply text-lg
+  }
   .hero-section {
     background-size: cover;
     background-attachment: fixed;
@@ -28,7 +31,7 @@ a {
     background-repeat: no-repeat;
   }
   .card {
-    @apply block rounded-sm drop-shadow-lg bg-white
+    @apply block rounded-lg drop-shadow-lg bg-white
   }
   main {
     @apply mt-20
@@ -36,4 +39,19 @@ a {
   .active {
     @apply bg-blue text-white
   }
+  .article {
+    @apply ltsm:w-full w-3/4 ml-auto p-3 max-w-3xl
+  }
+  .heading {
+    @apply text-3xl text-heavy-orange font-semibold text-center my-4
+  }
+  .heading2 {
+    @apply text-2xl text-blue-for-text font-medium my-2
+  }
+  .heading3 {
+    @apply text-xl font-medium my-2
+  }
+  .art-img {
+    @apply w-full h-10
+  } 
 }
