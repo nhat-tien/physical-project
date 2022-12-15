@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import Foot from '../components/Foot'
 import HomeNav from '../components/HomeNav'
 import bg from '../public/teach.jpg'
@@ -26,13 +27,13 @@ export default function Home() {
               <p>dolor sit amet, consectetur adipiscing elit, sed do eiursmod tempo</p>
             </div>
             <div className='ltsm:w-4/5 card flex flex-col p-10 items-center gap-2'>
-            <Image src='/rocket.svg' width={50} height={50} alt='rocket'></Image>
-            <h4 className='text-2xl font-medium'>Alo alo alo</h4>
+              <Image src='/rocket.svg' width={50} height={50} alt='rocket'></Image>
+              <h4 className='text-2xl font-medium'>Alo alo alo</h4>
               <p>dolor sit amet, consectetur adipiscing elit, sed do eiursmod tempo</p>
             </div>
             <div className='ltsm:w-4/5 card flex flex-col p-10 items-center gap-2'>
-            <Image src='/thumbup.svg' width={50} height={50} alt='thumbup'></Image>
-            <h4 className='text-2xl font-medium'>Alo alo alo</h4>
+              <Image src='/thumbup.svg' width={50} height={50} alt='thumbup'></Image>
+              <h4 className='text-2xl font-medium'>Alo alo alo</h4>
               <p>dolor sit amet, consectetur adipiscing elit, sed do eiursmod tempo</p>
             </div>
           </div>
@@ -40,14 +41,14 @@ export default function Home() {
       <section id='document' className='bg-blue w-full py-10'>
         <h2 className='text-4xl text-white text-center w-full my-10 font-semibold'>Lý thuyết</h2>
         <div className='ltsm:flex-col flex m-auto gap-4 max-w-3xl justify-center items-center'>
-            <div className='ltsm:w-3/4 card flex flex-col p-10 items-center gap-2 max-w-xs sm:w-1/3 rounded-md hover:bg-orange hover:text-white hover:scale-105 delay-75'>
+            <Link href='/dien' className='ltsm:w-3/4 card flex flex-col p-10 items-center gap-2 max-w-xs sm:w-1/3 rounded-md hover:bg-orange hover:text-white hover:scale-105 delay-75'>
               <Image src='/electric.svg' width={50} height={50} alt='electric'></Image>
               <h4 className='text-2xl font-medium'>Điện</h4>
-            </div>
-            <div className='ltsm:w-3/4 card flex flex-col p-10 items-center gap-2 max-w-xs sm:w-1/3 rounded-md hover:bg-orange hover:text-white hover:scale-105 delay-75'>
-            <Image src='/magnet.svg' width={50} height={50} alt='magnet'></Image>
-            <h4 className='text-2xl font-medium'>Từ</h4>
-            </div>
+            </Link>
+            <Link href='/tu'className='ltsm:w-3/4 card flex flex-col p-10 items-center gap-2 max-w-xs sm:w-1/3 rounded-md hover:bg-orange hover:text-white hover:scale-105 delay-75'>
+              <Image src='/magnet.svg' width={50} height={50} alt='magnet'></Image>
+              <h4 className='text-2xl font-medium'>Từ</h4>
+            </Link>
           </div>
       </section>
       <Foot />
