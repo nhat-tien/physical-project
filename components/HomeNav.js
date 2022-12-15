@@ -7,11 +7,11 @@ export default function HomeNav() {
 const [display, setDisplay ] = useState(false);
 const [active, setActive] = useState(null);
 const router = useRouter();
+const route = router.route.split("/")[1];
 
 useEffect(() => {
-    const route = router.route.split("/")[1];
-    console.log(route);
     setActive(route);
+    console.log(1);
 },[])
 
 const handleToggle = () => {
