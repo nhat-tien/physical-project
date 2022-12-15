@@ -1,17 +1,17 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useMemo } from 'react'
 import { useRouter } from 'next/router';
 
 export default function HomeNav() {
 const [display, setDisplay ] = useState(false);
 const [active, setActive] = useState(null);
 const router = useRouter();
-const route = router.route.split("/")[1];
+const route = useMemo(() => router.route.split("/")[1]);
 useEffect(() => {
     setActive(route);
     console.log(1);
-},[1])
+},[route]);
 
 const handleToggle = () => {
   setDisplay(!display);
