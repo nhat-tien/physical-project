@@ -1,15 +1,13 @@
-import HomeNav from "../components/HomeNav";
 import Link from "next/link";
-
+import Layout from "../components/Layout";
 
 export default function About() {
     return (
-        <div className="container">
-        <HomeNav />
-        <main className="mt-nav">
+        <Layout>
+        <main>
         <div>This is About page</div>
         <Link href='/'>Tro ve</Link>
         </main>
-        </div>
+        </Layout>
     )
 }

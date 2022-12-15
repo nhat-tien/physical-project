@@ -30,4 +30,10 @@ a {
   .card {
     @apply block rounded-sm drop-shadow-lg bg-white
   }
+  main {
+    @apply mt-20
+  }
+  .active {
+    @apply bg-blue text-white
+  }
 }

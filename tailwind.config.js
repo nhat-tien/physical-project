@@ -14,6 +14,7 @@ module.exports = {
       'heavy-blue': '#333353',
       'bubble-gum': '#ff77e9',
       'bermuda': '#78dcca',
+      'transparent':'transparent'
     },
     extend: {
       spacing: {
