@@ -8,11 +8,10 @@ const [display, setDisplay ] = useState(false);
 const [active, setActive] = useState(null);
 const router = useRouter();
 const route = router.route.split("/")[1];
-
 useEffect(() => {
     setActive(route);
     console.log(1);
-},[])
+},[1])
 
 const handleToggle = () => {
   setDisplay(!display);
