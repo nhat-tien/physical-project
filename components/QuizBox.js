@@ -12,7 +12,7 @@ useEffect(() => {
             handleWrong(userAnswer);
         }
     }
-},[userAnswer]);
+},[userAnswer,initAnswer]);
 
 const handleRight = ((userAnswer) => {
     const answers = document.querySelectorAll(".answer");

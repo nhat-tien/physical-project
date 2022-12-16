@@ -6,7 +6,6 @@ export default function About() {
         <Layout>
         <main>
         <div>This is About page</div>
-        <a href='/'>Tro ve</a>
         </main>
         </Layout>
     )
