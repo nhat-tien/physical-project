@@ -39,7 +39,7 @@ export default function Home() {
           </div>
       </section>
       <section id='document' className='bg-blue w-full py-10'>
-        <h2 className='text-4xl text-white text-center w-full my-10 font-semibold'>Lý thuyết</h2>
+        <h2 className='text-4xl text-white text-center w-full my-10 font-semibold'>Tài nguyên</h2>
         <div className='ltsm:flex-col flex m-auto gap-4 max-w-3xl justify-center items-center'>
             <Link href='/dien' className='ltsm:w-3/4 card flex flex-col p-10 items-center gap-2 max-w-xs sm:w-1/3 rounded-md hover:bg-orange hover:text-white hover:scale-105 delay-75'>
               <Image src='/electric.svg' width={50} height={50} alt='electric'></Image>
@@ -48,6 +48,10 @@ export default function Home() {
             <Link href='/tu'className='ltsm:w-3/4 card flex flex-col p-10 items-center gap-2 max-w-xs sm:w-1/3 rounded-md hover:bg-orange hover:text-white hover:scale-105 delay-75'>
               <Image src='/magnet.svg' width={50} height={50} alt='magnet'></Image>
               <h4 className='text-2xl font-medium'>Từ</h4>
+            </Link>
+            <Link href='/lab'className='ltsm:w-3/4 card flex flex-col p-10 items-center gap-2 max-w-xs sm:w-1/3 rounded-md hover:bg-orange hover:text-white hover:scale-105 delay-75'>
+              <Image src='/computer.svg' width={50} height={50} alt='computer'></Image>
+              <h4 className='text-2xl font-medium'>Thí nghiệm ảo</h4>
             </Link>
           </div>
       </section>

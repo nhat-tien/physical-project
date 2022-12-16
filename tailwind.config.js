@@ -18,7 +18,8 @@ module.exports = {
       'transparent':'transparent',
       'black':'#252a30',
       'green':'#0bb806',
-      'red':'#eb0202'
+      'red':'#eb0202',
+      'gray':'#bdbebf'
     },
     extend: {
       spacing: {
@@ -27,8 +28,8 @@ module.exports = {
       backgroundImage: {
       },
       screens: {
-        'sm': '577px',
-        'ltsm': {'max' : '576px'}
+        'sm': '609px',
+        'ltsm': {'max' : '608px'}
       }
     },
   },
