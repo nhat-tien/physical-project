@@ -15,7 +15,10 @@ module.exports = {
       'black-blur': 'rgba(23,32,46,0.5)',
       'heavy-orange': '#df7100',
       'blue-for-text': '#000080',
-      'transparent':'transparent'
+      'transparent':'transparent',
+      'black':'#252a30',
+      'green':'#0bb806',
+      'red':'#eb0202'
     },
     extend: {
       spacing: {

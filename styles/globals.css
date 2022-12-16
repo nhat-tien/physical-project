@@ -40,7 +40,7 @@ a {
     @apply bg-blue text-white
   }
   .article {
-    @apply ltsm:w-full w-3/4 ml-auto p-3 max-w-3xl
+    @apply ltsm:w-full w-3/4 mx-auto p-3 max-w-2xl
   }
   .heading {
     @apply text-3xl text-heavy-orange font-semibold text-center my-4
@@ -54,4 +54,10 @@ a {
   .art-img {
     @apply w-full h-10
   } 
+  .right {
+    @apply border-4 border-green 
+  }
+  .wrong {
+    @apply border-4 border-red
+  }
 }
