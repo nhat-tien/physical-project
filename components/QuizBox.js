@@ -4,13 +4,14 @@ import JSConfetti from 'js-confetti'
 export default function QuizBox({quiz}) {
 const initAnswer = useMemo(() => quiz.answer,[quiz])
 const [userAnswer, setUserAnswer] = useState('');
-const canvas = document.getElementById('my_confetti');   
-const jSConfetti =  new JSConfetti({ canvas });
 
-useEffect(() => {
+
+useEffect(() => { 
+    const canvas = document.getElementById('my_confetti')
     if(userAnswer != '') {
         if(userAnswer == initAnswer) {
             handleRight(userAnswer);
+            handleConfetti(canvas);
         } else {
             handleWrong(userAnswer);
         }
@@ -19,7 +20,6 @@ useEffect(() => {
 
 const handleRight = ((userAnswer) => {
     const answers = document.querySelectorAll(".answer");
-    jSConfetti.addConfetti();
     answers.forEach(answer => {
         if(answer.id == userAnswer) {
             answer.classList.add('right');
@@ -40,17 +40,24 @@ const handleWrong = ((userAnswer) => {
     })
 })
 
+const handleConfetti = (canvas) => {
+    const jsConfetti = new JSConfetti({ canvas });
+    jsConfetti.addConfetti();
+}
+
     return (
-        <div className="bg-heavy-blue p-6 rounded-lg my-4" id='my_confetti'>
+        <div className="bg-heavy-blue p-6 rounded-lg my-4 relative">
             <h2 className="text-white text-2xl my-2">
                 {quiz.title}
             </h2>
-            <div className="ltsm:grid-cols-1 grid grid-cols-2 gap-4">
+            <div className="ltsm:grid-cols-1 grid grid-cols-2 gap-4 z-30">
                 <button className="answer bg-white text-blue-for-text text-md font-medium rounded-md p-3" id='A' onClick={(e) => setUserAnswer(e.target.id)}>{quiz.A}</button>
                 <button className="answer bg-white text-blue-for-text text-md font-medium rounded-md p-3" id='B' onClick={(e) => setUserAnswer(e.target.id)}>{quiz.B}</button>
                 <button className="answer bg-white text-blue-for-text text-md font-medium rounded-md p-3" id='C' onClick={(e) => setUserAnswer(e.target.id)}>{quiz.C}</button>
                 <button className="answer bg-white text-blue-for-text text-md font-medium rounded-md p-3" id='D' onClick={(e) => setUserAnswer(e.target.id)}>{quiz.D}</button>
             </div>
+            <canvas className='absolute top-0 right-0 h-16 w-full' id='my_confetti'></canvas>
         </div>
+
     )
 }
