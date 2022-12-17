@@ -3,12 +3,9 @@ import JSConfetti from 'js-confetti'
 
 export default function QuizBox({quiz}) {
 const initAnswer = useMemo(() => quiz.answer,[quiz])
-const jSConfetti = useMemo(() => {
-    const canvas = document.getElementById('my_confetti');   
-    return new JSConfetti({ canvas });
-},[quiz]);
-
 const [userAnswer, setUserAnswer] = useState('');
+const canvas = document.getElementById('my_confetti');   
+const jSConfetti =  new JSConfetti({ canvas });
 
 useEffect(() => {
     if(userAnswer != '') {
