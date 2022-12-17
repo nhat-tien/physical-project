@@ -41,7 +41,7 @@ return (
         </ul>
       </div>
     {display && 
-    <div className='w-screen h-screen bg-black-blur z-10 fixed sm:hidden'></div>
+    <div className='w-screen h-screen bg-black-blur z-10 fixed sm:hidden top-0'></div>
     }
     </>
 )

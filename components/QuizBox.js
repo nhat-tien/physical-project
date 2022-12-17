@@ -1,7 +1,13 @@
 import { useEffect, useMemo, useState } from "react"
+import JSConfetti from 'js-confetti'
 
 export default function QuizBox({quiz}) {
 const initAnswer = useMemo(() => quiz.answer,[quiz])
+const jSConfetti = useMemo(() => {
+    const canvas = document.getElementById('my_confetti');   
+    return new JSConfetti({ canvas });
+},[quiz]);
+
 const [userAnswer, setUserAnswer] = useState('');
 
 useEffect(() => {
@@ -16,6 +22,7 @@ useEffect(() => {
 
 const handleRight = ((userAnswer) => {
     const answers = document.querySelectorAll(".answer");
+    jSConfetti.addConfetti();
     answers.forEach(answer => {
         if(answer.id == userAnswer) {
             answer.classList.add('right');
@@ -37,7 +44,7 @@ const handleWrong = ((userAnswer) => {
 })
 
     return (
-        <div className="bg-heavy-blue p-6 rounded-lg my-4">
+        <div className="bg-heavy-blue p-6 rounded-lg my-4" id='my_confetti'>
             <h2 className="text-white text-2xl my-2">
                 {quiz.title}
             </h2>
