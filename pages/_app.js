@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
   <Head>
         <title>Physic Theory</title>
         <meta name="description" content="Project cua sinh vien" />
-        <link rel="icon" href="/PhyLogo.svg" />
+        <link rel="icon" href="/phylogo.png" />
   </Head> 
   <Component {...pageProps} />
   </>
