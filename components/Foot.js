@@ -14,7 +14,8 @@ export default function Foot() {
                 <Link className='text-white text-sm' href='/lab'>Phòng thí nghiệm ảo</Link>
             </div>
         </div>
-        <p className='mx-auto text-center my-5'>Copyright@2022 by STG Co.Ltd</p>
+        <p className='mx-auto text-center mt-5 text-white opacity-60'>Powered by STG Co.Ltd</p>
+        <p className='mx-auto text-center text-white opacity-60'>Made with 💖</p>
     </div>
 )
 }

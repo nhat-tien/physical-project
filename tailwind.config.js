@@ -5,6 +5,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+        'noto-serif': ['"Noto Serif"','sans-serif'],
+    },
     colors: {
       'white': '#ffffff',
       'blue': '#1e40af',
@@ -28,8 +31,8 @@ module.exports = {
       backgroundImage: {
       },
       screens: {
-        'sm': '609px',
-        'ltsm': {'max' : '608px'}
+        'sm': '757px',
+        'ltsm': {'max' : '756px'}
       }
     },
   },
