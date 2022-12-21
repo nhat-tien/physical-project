@@ -7,12 +7,12 @@ import Path from "../../../components/Path";
 
 export default function Post() {
     const quiz = {
-        title: 'Đây là câu hỏi',
-        A: 'Đáp án A',
-        B: 'Đáp án B',
-        C: 'Đáp án C',
-        D: 'Đáp án D',
-        answer: 'A'
+        title: 'Hiện tượng sau là loại nhiễm điện gì: "Cho thanh kim loại không nhiễm điện chạm vào quả cầu đã nhiễm điện thì thanh kim loại nhiễm điện cùng dấu với điện tích của quả cầu"',
+        A: 'Nhiễm điện do hưởng ứng',
+        B: 'Nhiễm điện do cọ xát',
+        C: 'Nhiễm điện do tiếp xúc',
+        D: 'Nhiễm điện do "vì nó thích thế"',
+        answer: 'C'
     }
     return (
         <Layout >
@@ -72,7 +72,7 @@ export default function Post() {
 <BlockMath math='\overrightarrow F  = \overrightarrow {{F_1}}  + \overrightarrow {{F_2}}  + ... + \overrightarrow {{F_n}}'></BlockMath>   
 <p className="heading3">Sơ đồ tư duy về điện tích, định luật Cu-lông</p>
 <Image src='/dien/pic1.6.png' width={700} height={700} alt='so do tu duy'></Image>
-<p>Nguồn: <a href='https://loigiaihay.com/ly-thuyet-dien-tich-dinh-luat-cu-long-c62a6517.html'>https://loigiaihay.com/ly-thuyet-dien-tich-dinh-luat-cu-long-c62a6517.html</a></p>
+<p>Nguồn: <a href='https://loigiaihay.com/ly-thuyet-dien-tich-dinh-luat-cu-long-c62a6517.html' target={'_blank'}>loigiaihay.com</a></p>
     <QuizBox quiz={quiz}/>
     </main>
         </Layout>

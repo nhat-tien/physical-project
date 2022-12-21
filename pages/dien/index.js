@@ -10,6 +10,7 @@ export default function Dien() {
                 <h3 className="text-3xl ">Điện trường tĩnh</h3>
                 <ul className="list-disc ml-5">
                     <li className="my-3"><Link href='dien/dien-truong-tinh/dinh-luat-coulomb' className="hover:border-blue hover:text-blue p-1 border-2 border-transparent">Định luật Coulomb</Link></li>
+                    <li className="my-3"><Link href='dien/dien-truong-tinh/dien-truong-duong-suc-dien-truong' className="hover:border-blue hover:text-blue p-1 border-2 border-transparent">Điện trường - đường sức điện trường</Link></li>
                 </ul>
                 <h3 className="text-3xl ">Dòng điện không đổi</h3>
                 <ul className="list-disc ml-5">
