@@ -71,7 +71,7 @@ chính là độ lớn của lực điện tác dụng lên điện tích 1C. Do
 <Image src='/dien-truong/pic2.2.png' width={400} height={400} alt='hinh minh hoa'></Image>
 <p className="heading3">Sơ đồ tư duy về điện trường và cường độ điện trường. Đường sức điện</p>
 <Image src='/dien-truong/pic2.3.png' width={800} height={400} alt='hinh minh hoa'></Image>
-        <p>Nguồn: <a href='https://loigiaihay.com/ly-thuyet-dien-truong-va-cuong-do-dien-truong-duong-suc-dien-c62a6698.html' target={'_blank'}>loigiaihay.com</a></p>
+        <p>Nguồn: <a href='https://loigiaihay.com/ly-thuyet-dien-truong-va-cuong-do-dien-truong-duong-suc-dien-c62a6698.html' target='_blank' rel="noreferrer">loigiaihay.com</a></p>
         <QuizBox quiz={quiz}/>
         </main>
             </Layout>

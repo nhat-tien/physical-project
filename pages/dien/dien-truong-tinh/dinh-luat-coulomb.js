@@ -72,7 +72,7 @@ export default function Post() {
 <BlockMath math='\overrightarrow F  = \overrightarrow {{F_1}}  + \overrightarrow {{F_2}}  + ... + \overrightarrow {{F_n}}'></BlockMath>   
 <p className="heading3">Sơ đồ tư duy về điện tích, định luật Cu-lông</p>
 <Image src='/dien/pic1.6.png' width={700} height={700} alt='so do tu duy'></Image>
-<p>Nguồn: <a href='https://loigiaihay.com/ly-thuyet-dien-tich-dinh-luat-cu-long-c62a6517.html' target={'_blank'}>loigiaihay.com</a></p>
+<p>Nguồn: <a href='https://loigiaihay.com/ly-thuyet-dien-tich-dinh-luat-cu-long-c62a6517.html' target='_blank' rel="noreferrer">loigiaihay.com</a></p>
     <QuizBox quiz={quiz}/>
     </main>
         </Layout>
