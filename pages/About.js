@@ -41,7 +41,7 @@ export default function about() {
                 <Image src='/about/tech.png' width={300} height={300} alt='vr'></Image>
             </div>
             <div className="border-2 border-gray w-32 mx-auto my-10"></div>
-            <p className="text-4xl font-noto-serif text-center">Nhân sự</p>
+            <p className="text-5xl font-noto-serif text-center">Nhân sự</p>
         </main>
         </Layout>
     )
