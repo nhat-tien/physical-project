@@ -5,9 +5,9 @@ export default function Foot() {
     return (
     <div className='bg-heavy-blue p-5 relative bottom-0'>
         <div className='ltsm:flex-col ltsm:items-center flex justify-evenly gap-8 items-start'>
-        <Link className='relative top-3' href='/about'><Image src='/company_darknew.png' width={150} height={100} alt='company logo'></Image></Link>
+        <Link className='relative top-3' href='/About'><Image src='/company_darknew.png' width={150} height={100} alt='company logo'></Image></Link>
         <div className='flex flex-col gap-3 items-center'>
-            <Link href='/about'><p className=' text-white text-lg underline underline-offset-2'>Về chúng tôi</p></Link>
+            <Link href='/About'><p className=' text-white text-lg underline underline-offset-2'>Về chúng tôi</p></Link>
             <Link href=''><p className=' text-white text-lg underline underline-offset-2'>Privacy Policy</p></Link>
             <Link href=''><p className=' text-white text-lg underline underline-offset-2'>Term of Service</p></Link>
         </div>

@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import Image from "next/image";
 
 
-export default function about() {
+export default function About() {
 
     return (
         <Layout>
