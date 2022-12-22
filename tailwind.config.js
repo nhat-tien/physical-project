@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     fontFamily: {
         'noto-serif': ['"Noto Serif"','sans-serif'],
+        'josefin':['"Josefin Sans"', 'arial']
     },
     colors: {
       'white': '#ffffff',

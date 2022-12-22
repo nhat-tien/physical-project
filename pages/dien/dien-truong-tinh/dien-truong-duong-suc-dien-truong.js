@@ -4,6 +4,7 @@ import QuizBox from "../../../components/QuizBox";
 import 'katex/dist/katex.min.css';
 import { InlineMath, BlockMath } from 'react-katex';
 import Path from "../../../components/Path";
+import LayoutArticle from "../../../components/LayoutArticle";
 
 export default function Post() {
         const quiz = {
@@ -15,9 +16,7 @@ export default function Post() {
             answer: 'B'
         }
 return (
-        <Layout >
-            <main className='article'>
-                <Path />
+       <LayoutArticle topic='dien'>
                 <p className="heading">Điện trường - đường sức điện</p>
                 <p className="heading2">I. Điện trường</p>
 <p className="heading3">1. Môi trường truyền tương tác điện&nbsp;</p>
@@ -29,7 +28,7 @@ return (
 <p className="heading2">II.&nbsp;Cường độ điện trường</p>
 <p className="heading3">1. Khái niệm cường độ điện trường</p>
 <p>Giả sử có một điện tích điểm Q nằm tại điểm O. Điện tích này tạo ra một điện trường xung quanh nó. Để nghiên cứu điện trường của Q tại điểm M, ta đặt tại đó một điện tích điểm q, gọi là điện tích thử và xét lực điện tác dụng lên q (Hình 3.2). Theo định luật Cu-lông, q càng nằm xa Q thì lực điện càng nhỏ. Ta nói điện trường tại các điểm càng xa Q càng yếu. Vì thế cần phải xây dựng một khái niệm đặc trưng cho sự mạnh, yếu của điện trường tại một điểm. Khái niệm đó là cường độ điện trường.</p>
-<Image src='/dien-truong/pic2.1.png' width={400} height={400} alt='hinh minh hoa'></Image>
+<Image src='/dien-truong/pic2.1.png' width={400} height={400} className="mx-auto" alt='hinh minh hoa'></Image>
 <p className="heading3">2. Định nghĩa.</p>
 <p>Thực nghiệm chứng tỏ rằng lần lượt các điện tích thử q1, q2,… khác nhau tại một điểm thì:</p>
 <BlockMath math='\dfrac{F_{1}}{q_{1}}=\dfrac{F_{2}}{q_{2}}=...'></BlockMath>
@@ -68,12 +67,11 @@ chính là độ lớn của lực điện tác dụng lên điện tích 1C. Do
 <p className="heading3">4. Điện trường đều</p>
 <p>Điện trường đều là điện trường mà vectơ cường độ điện trường tại mọi điểm đều có cùng phương, cùng chiều, và cùng độ lớn; đường sức điện là những đường thẳng song song cách đều.</p>
 <p>Điện trường trong một điện môi đồng chất nằm ở giữa hai bản kim loại phẳng đặt song song với nhau và điện tích bằng nhau, trái dấu là một điện trường đều.</p>
-<Image src='/dien-truong/pic2.2.png' width={400} height={400} alt='hinh minh hoa'></Image>
+<Image src='/dien-truong/pic2.2.png' width={400} height={400} className="mx-auto" alt='hinh minh hoa'></Image>
 <p className="heading3">Sơ đồ tư duy về điện trường và cường độ điện trường. Đường sức điện</p>
-<Image src='/dien-truong/pic2.3.png' width={800} height={400} alt='hinh minh hoa'></Image>
+<Image src='/dien-truong/pic2.3.png' width={800} height={400} className="mx-auto" alt='hinh minh hoa'></Image>
         <p>Nguồn: <a href='https://loigiaihay.com/ly-thuyet-dien-truong-va-cuong-do-dien-truong-duong-suc-dien-c62a6698.html' target='_blank' rel="noreferrer">loigiaihay.com</a></p>
         <QuizBox quiz={quiz}/>
-        </main>
-            </Layout>
+    </LayoutArticle>
     )
 }

@@ -1,9 +1,8 @@
-import Layout from "../../../components/Layout"
 import Image from "next/image"
 import QuizBox from "../../../components/QuizBox";
 import 'katex/dist/katex.min.css';
 import { InlineMath, BlockMath } from 'react-katex';
-import Path from "../../../components/Path";
+import LayoutArticle from "../../../components/LayoutArticle";
 
 export default function Post() {
     const quiz = {
@@ -15,21 +14,19 @@ export default function Post() {
         answer: 'C'
     }
     return (
-        <Layout >
-        <main className='article'>
-            <Path />
+       <LayoutArticle topic='dien'>
             <h2 className="heading">Định luật Coulomb</h2>
             <h3 className="heading2">I. Sự nhiễm điện của các vật. Điện tích. Tương tác điện.</h3>
             <p className='heading3'>1. Sự nhiễm điện của các vật.</p>
             <p className="heading3">- Nhiễm điện do cọ xát:</p>
-            <Image src='/dien/pic1-1.png' width={600} height={600} alt='nhiem-dien-co-sat'></Image>
+            <Image src='/dien/pic1-1.png' width={600} height={600} alt='nhiem-dien-co-sat' className="mx-auto"></Image>
             <p>Cọ xát một thước nhựa vào vải len, ta thấy thước nhựa có thể hút được các vật nhẹ như giấy</p>
             <p className='heading3'>- Nhiễm điện do tiếp xúc</p>
-            <Image src='/dien/pic1.2.png' width={200} height={200} alt='nhiem-dien-co-sat'></Image>
+            <Image src='/dien/pic1.2.png' width={200} height={200} alt='nhiem-dien-co-sat' className="mx-auto"></Image>
             <p>Cho thanh kim loại không nhiễm điện chạm vào quả cầu đã nhiễm điện thì thanh kim loại nhiễm điện cùng dấu với điện tích của quả cầu</p>
             <p>Đưa thanh kim loại ra xa quả cầu thì thanh kim loại vẫn nhiễm điện.</p>
             <p className="heading3">- Nhiễm điện do hưởng ứng</p>
-            <Image src='/dien/pic1.3.png' width={200} height={200} alt='nhiem dien hưởng ứng'></Image>            
+            <Image src='/dien/pic1.3.png' width={200} height={200} alt='nhiem dien hưởng ứng' className="mx-auto"></Image>            
             <p>Đưa thanh kim loại không nhiễm điện đến gần quả cầu đã nhiễm điện nhưng không chạm vào quả cầu, thì hai đầu thanh kim loại được nhiễm điện. Đầu gần quả cầu hơn nhiễm điện trái dấu với điện tích quả cầu, đầu xa hơn nhiễm điện cùng dấu.</p>
 <p>Đưa thanh kim loại ra xa quả cầu thì thanh kim loại trở về trạng thái không nhiễm điện như lúc đầu</p>
             <p className="heading3">2. Điện tích. Điện tích điểm</p>
@@ -37,7 +34,7 @@ export default function Post() {
             <p>- Điện tích điểm là một vật tích điện có kích thước rất nhỏ so với khoảng cách tới điểm mà ta xét. Điện tích điểm là điện tích được coi như tập trung tại một điểm.</p>
             <p className="heading3">3. Tương tác điện. Hai loại điện tích</p>
             <p>- Các điện tích hoặc đẩy nhau, hoặc hút nhau. Sự đẩy nhau hay hút nhau giữa các điện tích đó là tương tác điện.</p>
-            <Image src='/dien/pic1.4.png' width={200} height={200} alt='tuong tac dien'></Image>
+            <Image src='/dien/pic1.4.png' width={200} height={200} alt='tuong tac dien' className="mx-auto"></Image>
             <p>- Có hai loại điện tích là điện tích dương (+) và điện tích âm (-).</p>
             <p>+ Các điện tích cùng loại (cùng dấu) thì đẩy nhau.</p>
             <p>+ Các điện tích khác loại (khác dấu) thì hút nhau.</p>
@@ -51,7 +48,7 @@ export default function Post() {
             <p>Lực tương tác có:</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ Phương: là đường thẳng nối giữa 2 điện tích điểm</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ Chiều:</p> 
-<Image src='/dien/pic1.5.png' width={500} height={500} alt='chieu cua tu'></Image>
+<Image src='/dien/pic1.5.png' width={500} height={500} alt='chieu cua tu' className="mx-auto"></Image>
 <p>+ Độ lớn:</p>
 <p>&nbsp;Tỉ lệ thuận với tích độ lớn q<sub>1</sub>, q<sub>2</sub></p>
 <p>&nbsp;Tỉ lệ nghịch với bình phương khoảng cách</p>
@@ -71,10 +68,9 @@ export default function Post() {
 <p>Giả sử có n điện tích điểm q<sub>1</sub>, q<sub>2</sub>,…, q<sub>n</sub> tác dụng lên điện tích điểm q những lực tương tác tĩnh điện<InlineMath math='\overrightarrow {{F_1}} ,\overrightarrow {{F_2}} ,...,\overrightarrow {{F_n}}'></InlineMath>thì lực điện tổng hợp do các điện tích điểm trên tác dụng lên điện tích q tuân theo nguyên lý chồng chất lực điện.</p>
 <BlockMath math='\overrightarrow F  = \overrightarrow {{F_1}}  + \overrightarrow {{F_2}}  + ... + \overrightarrow {{F_n}}'></BlockMath>   
 <p className="heading3">Sơ đồ tư duy về điện tích, định luật Cu-lông</p>
-<Image src='/dien/pic1.6.png' width={700} height={700} alt='so do tu duy'></Image>
+<Image src='/dien/pic1.6.png' width={700} height={700} alt='so do tu duy' className="mx-auto"></Image>
 <p>Nguồn: <a href='https://loigiaihay.com/ly-thuyet-dien-tich-dinh-luat-cu-long-c62a6517.html' target='_blank' rel="noreferrer">loigiaihay.com</a></p>
     <QuizBox quiz={quiz}/>
-    </main>
-        </Layout>
+</LayoutArticle>
     )
 }

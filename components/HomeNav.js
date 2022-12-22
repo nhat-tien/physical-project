@@ -27,7 +27,6 @@ return (
           <li ><Link href='/dien' className={`${active == 'dien' ? 'active' : 'hover:text-blue'} py-1 px-4 text-lg block rounded-full border-2 border-transparent hover:border-blue transition-colors uppercase`}>Điện</Link></li>
           <li ><Link href='/tu' className={`${active == 'tu' ? 'active' : 'hover:text-blue'} py-1 px-4 text-lg block rounded-full border-2 border-transparent hover:border-blue transition-colors uppercase`}>Từ</Link></li>
           <li ><Link href='/lab' className={`${active == 'lab' ? 'active' : 'hover:text-blue'} py-1 px-4 text-lg block rounded-full border-2 border-transparent hover:border-blue transition-colors uppercase`}>LAB</Link></li>
-          <li className={`${active == 'About' ? 'active' : 'hover:text-blue'} py-1 px-4 text-lg block rounded-full border-2 border-transparent hover:border-blue transition-colors uppercase`}><Link href='/About'>Về chúng tôi</Link></li>
         </ul>
       </nav>
     </div>
@@ -37,7 +36,6 @@ return (
           <li ><Link href='/dien' className={`${active == 'dien' ? 'active' : ' '} py-1 px-4 text-lg block rounded-full border-2 border-transparent transition-colors uppercase`}>Điện</Link></li>
           <li ><Link href='/tu' className={`${active == 'tu' ? 'active' : ' '} py-1 px-4 text-lg block rounded-full border-2 border-transparent transition-colors uppercase`}>Từ</Link></li>
           <li ><Link href='/lab' className={`${active == 'lab' ? 'active' : ' '} py-1 px-4 text-lg block rounded-full border-2 border-transparent transition-colors uppercase`}>LAB</Link></li>
-          <li ><Link href='/About' className={`${active == 'About' ? 'active' : ' '} py-1 px-4 text-lg block rounded-full border-2 border-transparent transition-colors uppercase`}>Về chúng tôi</Link></li>
         </ul>
       </div>
     {display && 

@@ -1,9 +1,9 @@
-import Layout from "../../../components/Layout"
+import LayoutArticle from "../../../components/LayoutArticle"
 
 export default function Post() {
     return (
-        <Layout >
-        <main>Day la dinh luat Ampere</main>
-        </Layout>
+        <LayoutArticle>
+            <div>Day la Ampere</div>
+        </LayoutArticle>
     )
 }

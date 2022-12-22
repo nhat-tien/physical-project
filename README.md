@@ -1,2 +1,2 @@
 # Physic Theory
-website: [Physic Theory](https://physicthoery.vercel.app/)
+website: [Physic Theory](https://physictheory.vercel.app/)

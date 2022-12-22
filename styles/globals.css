@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,6 +11,8 @@ body {
   margin: 0;
   font-family: Barlow ,sans-serif;
   font-weight: 400;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -41,7 +44,7 @@ a {
     @apply bg-blue text-white
   }
   .article {
-    @apply ltsm:w-full w-3/4 mx-auto p-3 max-w-2xl
+    @apply ltsm:w-full w-3/4 ml-auto
   }
   .heading {
     @apply text-3xl text-heavy-orange font-semibold text-center my-4

@@ -46,7 +46,7 @@ const handleConfetti = (canvas) => {
 }
 
     return (
-        <div className="bg-heavy-blue p-6 rounded-lg mb-3 relative mt-8">
+        <div className="bg-heavy-blue p-6 rounded-lg mb-3 relative mt-8 max-w-2xl mx-auto">
             <h2 className="text-white text-xl my-2">
                 {quiz.title}
             </h2>
