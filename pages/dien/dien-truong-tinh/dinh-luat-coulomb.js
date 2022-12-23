@@ -14,7 +14,7 @@ export default function Post() {
         answer: 'C'
     }
     return (
-       <LayoutArticle topic='dien'>
+       <LayoutArticle>
             <h2 className="heading">Định luật Coulomb</h2>
             <h3 className="heading2">I. Sự nhiễm điện của các vật. Điện tích. Tương tác điện.</h3>
             <p className='heading3'>1. Sự nhiễm điện của các vật.</p>

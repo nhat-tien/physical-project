@@ -17,31 +17,36 @@ export default function About() {
             </div>
             <div className="border-2 border-gray w-20 mx-auto my-10"></div>
                 
-            <p className="text-3xl italic font-noto-serif font-bold text-center">Câu chuyện của chúng tôi</p>
-            <Image src='/companynew.png' width={500} height={300} alt='logo' className="mx-auto my-5"></Image>
+            <p className="ltsm:text-2xl text-5xl italic font-noto-serif font-bold text-center">Câu chuyện của chúng tôi</p>
+            <Image src='/companynew.png' width={300} height={300} alt='logo' className="ltsm:w-40 mx-auto my-10"></Image>
             <div className="ltsm:flex-col flex flex-row justify-center items-center w-full gap-10 my-10">
                 <div className="max-w-md p-5">
                     <h3 className="text-4xl font-semibold">- Tầm nhìn -</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <p className="text-xl">Trở thành biểu tượng niềm tin hàng đầu Đông Nam Á về sản phẩm phần mềm giáo dục và tri thức.</p>
                 </div>
                 <Image src='/about/vr.png' width={300} height={300} alt='vr'></Image>
             </div>
+            <Image className="ltsm:hidden absolute right-0" src='/about/side-image1.png' width={200} height={300} alt='side image'></Image>
             <div className="ltsm:flex-col flex flex-row-reverse justify-center items-center w-full gap-10">
                 <div className="max-w-md p-5">
                     <h3 className="text-4xl font-semibold">- Sứ mạng -</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <p className="text-xl">Giải pháp công nghệ số cho nền giáo dục Việt Nam. Đưa cuộc cách mạng 4.0 vào trong giảng dạy và tiếp thu kiến thức.</p>
                 </div>
                 <Image src='/about/class.png' width={300} height={300} alt='vr'></Image>
             </div>
             <div className="ltsm:flex-col flex flex-row justify-center items-center w-full gap-10">
                 <div className="max-w-md p-5">
                     <h3 className="text-4xl font-semibold">- Giá trị -</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <p className="text-xl">Bất cứ ai cũng có quyền học hỏi, chúng tôi biết điều đó. Chúng tôi cung cấp nguồn trí thức có thể truy cập từ bất cứ nơi đâu có Internet.</p>
                 </div>
                 <Image src='/about/tech.png' width={300} height={300} alt='vr'></Image>
             </div>
+            <Image className="ltsm:hidden absolute left-0" src='/about/side-image2.png' width={200} height={300} alt='side image'></Image>
             <div className="border-2 border-gray w-32 mx-auto my-10"></div>
             <p className="text-5xl font-noto-serif text-center">Nhân sự</p>
+            <div className="flex flex-row">
+                <div></div>
+            </div>
         </main>
         </Layout>
     )

@@ -11,6 +11,10 @@ export default function Tu() {
                 <ul className="list-disc ml-5">
                     <li className="my-3"><Link href='tu/tu-truong-cam-ung-dien-tu/dinh-luat-ampere' className="hover:border-blue hover:text-blue p-1 border-2 border-transparent">Tương tác từ định luật Ampère</Link></li>
                 </ul>
+                <h3 className="text-3xl ">Tài liệu thêm</h3>
+                <ul className="list-disc ml-5">
+                    <li className="my-3"><Link href='tu/tai-lieu-them/tom-tat' className="hover:border-blue hover:text-blue p-1 border-2 border-transparent">Tóm tắt công thức</Link></li>
+                </ul>
         </main>
         </Layout>
     )

@@ -13,6 +13,10 @@ export default function SideNavDien() {
                 <ul className="ml-5">
                     <li className="my-4 truncate  hover:border-blue hover:text-blue p-1 border-2 border-transparent"><Link href='' className="">Đại cương về dòng điện</Link></li>
                 </ul>
+                <h3 className="font-medium text-xl truncate">Tài liệu thêm</h3>
+                <ul className="ml-5">
+                    <li className="my-4 truncate  hover:border-blue hover:text-blue p-1 border-2 border-transparent"><Link href='../tai-lieu-them/tom-tat' className="">Tóm tắt công thức</Link></li>
+                </ul>
         </div>
     )
 }

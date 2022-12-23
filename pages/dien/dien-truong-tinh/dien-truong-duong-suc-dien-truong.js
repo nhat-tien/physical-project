@@ -16,7 +16,7 @@ export default function Post() {
             answer: 'B'
         }
 return (
-       <LayoutArticle topic='dien'>
+       <LayoutArticle>
                 <p className="heading">Điện trường - đường sức điện</p>
                 <p className="heading2">I. Điện trường</p>
 <p className="heading3">1. Môi trường truyền tương tác điện&nbsp;</p>

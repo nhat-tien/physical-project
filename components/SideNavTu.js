@@ -8,6 +8,10 @@ export default function SideNavTu() {
                 <ul className="ml-5">
                     <li className="my-4 truncate  hover:border-blue hover:text-blue p-1 border-2 border-transparent"><Link href='../tu-truong-cam-ung-dien-tu/dinh-luat-ampere'>Tương tác từ định luật Ampère</Link></li>
                 </ul>
+                <h3 className="font-medium text-xl truncate">Tài liệu thêm</h3>
+                <ul className="ml-5">
+                    <li className="my-4 truncate  hover:border-blue hover:text-blue p-1 border-2 border-transparent"><Link href='../tai-lieu-them/tom-tat'>Tóm tắt công thức</Link></li>
+                </ul>
         </div>
     )
 }

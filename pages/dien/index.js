@@ -16,6 +16,10 @@ export default function Dien() {
                 <ul className="list-disc ml-5">
                     <li className="my-3"><Link href='' className="hover:border-blue hover:text-blue p-1 border-2 border-transparent">Đại cương về dòng điện</Link></li>
                 </ul>
+                <h3 className="text-3xl ">Tài liệu thêm</h3>
+                <ul className="list-disc ml-5">
+                    <li className="my-3"><Link href='dien/tai-lieu-them/tom-tat' className="hover:border-blue hover:text-blue p-1 border-2 border-transparent">Tóm tắt công thức</Link></li>
+                </ul>
         </main>
         </Layout>
     )

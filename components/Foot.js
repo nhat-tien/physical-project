@@ -21,8 +21,8 @@ export default function Foot() {
                 </ul>
         </div>
         </div>
-        <p className='mx-auto text-center mt-5 text-white opacity-60'>Copyright © 2022 STG Co.Ltd</p>
-        <p className='mx-auto text-center text-white opacity-60'>Made with 💖</p>
+        <p className='text-sm mx-auto text-center mt-5 text-white opacity-60'>Powered by STG Co.Ltd</p>
+        <p className='text-sm mx-auto text-center text-white opacity-60'>Made with 💖</p>
     </div>
 )
 }
