@@ -19,6 +19,9 @@ export default function About() {
                 
             <p className="ltsm:text-2xl text-5xl italic font-noto-serif font-bold text-center">Câu chuyện của chúng tôi</p>
             <Image src='/companynew.png' width={300} height={300} alt='logo' className="ltsm:w-40 mx-auto my-10"></Image>
+            <div className="mb-12 mt-0 max-w-xl mx-auto p-3">
+                <p className="font-semibold">Ngày 12/12/2022, 7 sinh viên khoa Công nghệ Thông tin cùng mang hoài bão to lớn, đã cùng chung tay khởi nghiệp, lập nên start-up công nghệ mang tên Seven T Group. Trải qua nhiều sóng gió chông gai, nhưng nhờ tinh thần bền bỉ cùng sự chèo lái khôn ngoan của Leader Mr. Trường, chúng tôi đã gặt hái nhiều thành công vang dội. Hãy tham gia cùng chúng tôi, chúng tôi sẽ cho bạn thấy tương lai của Việt Nam.</p>
+            </div>
             <div className="ltsm:flex-col flex flex-row justify-center items-center w-full gap-10 my-10">
                 <div className="max-w-md p-5">
                     <h3 className="text-4xl font-semibold">- Tầm nhìn -</h3>
@@ -41,12 +44,76 @@ export default function About() {
                 </div>
                 <Image src='/about/tech.png' width={300} height={300} alt='vr'></Image>
             </div>
-            <Image className="ltsm:hidden absolute left-0" src='/about/side-image2.png' width={200} height={300} alt='side image'></Image>
+            <Image className="ltsm:hidden absolute left-0 -z-20" src='/about/side-image2.png' width={200} height={300} alt='side image'></Image>
             <div className="border-2 border-gray w-32 mx-auto my-10"></div>
             <p className="text-5xl font-noto-serif text-center">Nhân sự</p>
-            <div className="flex flex-row">
-                <div></div>
+            <div className="ltsm:flex-col ltsm:items-center flex flex-row max-w-2xl mx-auto flex-wrap gap-5 mt-5 justify-evenly">
+                <div className="flex flex-col rounded-lg max-w-md shadow-lg w-48">
+                    <div className="bg-heavy-orange rounded-t-lg relative h-24">
+                        <Image className="rounded-full border-2 border-white absolute top-10 left-12" src='/about/van-truong.jpg' width={90} height={90} alt='tien'></Image>
+                    </div>
+                    <div className="mt-8 p-4">
+                        <h5 className="font-bold text-xl text-center">Phan Văn Trường</h5>
+                        <p className="text-center">CEO</p>
+                    </div>
+                </div>
+                <break className="ltsm:hidden basis-full w-0 h-0"></break>
+                <div className="flex flex-col rounded-lg max-w-md shadow-lg w-48">
+                    <div className="bg-blue rounded-t-lg relative h-24">
+                        <Image className="rounded-full border-2 border-white absolute top-10 left-12" src='/about/nhat-tien.jpg' width={90} height={90} alt='tien'></Image>
+                    </div>
+                    <div className="mt-8 p-4">
+                        <h5 className="font-bold text-xl text-center">Lê Đặng Nhật Tiến</h5>
+                        <p className="text-center">Phó Giám Đốc</p>
+                    </div>
+                </div>
+                <div className="flex flex-col rounded-lg max-w-md shadow-lg w-48">
+                    <div className="bg-green rounded-t-lg relative h-24">
+                        <Image className="rounded-full border-2 border-white absolute top-10 left-12" src='/about/duy-thanh.jpg' width={90} height={90} alt='tien'></Image>
+                    </div>
+                    <div className="mt-8 p-4">
+                        <h5 className="font-bold text-xl text-center">Đào Duy Thành</h5>
+                        <p className="text-center">Trưởng phòng tài chính</p>
+                    </div>
+                </div>
+                <div className="flex flex-col rounded-lg max-w-md shadow-lg w-48">
+                    <div className="bg-yellow rounded-t-lg relative h-24">
+                        <Image className="rounded-full border-2 border-white absolute top-10 left-12" src='/about/tuong.jpg' width={90} height={90} alt='tien'></Image>
+                    </div>
+                    <div className="mt-8 p-4">
+                        <h5 className="font-bold text-xl text-center">Nguyễn Phúc Tường</h5>
+                        <p className="text-center">Thư kí</p>
+                    </div>
+                </div>
+                <div className="flex flex-col rounded-lg max-w-md shadow-lg w-48">
+                    <div className="bg-heavy-blue rounded-t-lg relative h-24">
+                        <Image className="rounded-full border-2 border-white absolute top-10 left-12" src='/about/le-hoang-tuan.jpg' width={90} height={90} alt='tien'></Image>
+                    </div>
+                    <div className="mt-8 p-4">
+                        <h5 className="font-bold text-xl text-center">Lê Hoàng Tuấn</h5>
+                        <p className="text-center">Trưởng phòng tài chính</p>
+                    </div>
+                </div>
+                <div className="flex flex-col rounded-lg max-w-md shadow-lg w-48">
+                    <div className="bg-blue-for-text rounded-t-lg relative h-24">
+                        <Image className="rounded-full border-2 border-white absolute top-10 left-12" src='/about/tam-cris.jpg' width={90} height={90} alt='tien'></Image>
+                    </div>
+                    <div className="mt-8 p-4">
+                        <h5 className="font-bold text-xl text-center">Nguyễn Thành Tâm</h5>
+                        <p className="text-center">Kỹ thuật viên</p>
+                    </div>
+                </div>
+                <div className="flex flex-col rounded-lg max-w-md shadow-lg w-48">
+                    <div className="bg-black-blur rounded-t-lg relative h-24">
+                        <Image className="rounded-full border-2 border-white absolute top-10 left-12" src='/about/thanh-tuan.jpg' width={90} height={90} alt='tien'></Image>
+                    </div>
+                    <div className="mt-8 p-4">
+                        <h5 className="font-bold text-xl text-center">Lữ Thanh Tuấn</h5>
+                        <p className="text-center">Kỹ thuật viên</p>
+                    </div>
+                </div>
             </div>
+            <div className="border-2 border-gray w-32 mx-auto my-10"></div>
         </main>
         </Layout>
     )
