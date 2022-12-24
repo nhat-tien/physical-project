@@ -14,7 +14,7 @@ export default function Dien() {
                 </ul>
                 <h3 className="text-3xl ">Dòng điện không đổi</h3>
                 <ul className="list-disc ml-5">
-                    <li className="my-3"><Link href='' className="hover:border-blue hover:text-blue p-1 border-2 border-transparent">Đại cương về dòng điện</Link></li>
+                    <li className="my-3"><Link href='dien/dong-dien-khong-doi/dai-cuong-dong-dien' className="hover:border-blue hover:text-blue p-1 border-2 border-transparent">Đại cương về dòng điện</Link></li>
                 </ul>
                 <h3 className="text-3xl ">Tài liệu thêm</h3>
                 <ul className="list-disc ml-5">
