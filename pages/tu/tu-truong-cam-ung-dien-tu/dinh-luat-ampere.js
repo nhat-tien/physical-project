@@ -5,15 +5,6 @@ import 'katex/dist/katex.min.css';
 import { InlineMath, BlockMath } from 'react-katex';
 
 export default function Post() {
-    const quiz = {
-        title: 'Hiện tượng sau là loại nhiễm điện gì: "Cho thanh kim loại không nhiễm điện chạm vào quả cầu đã nhiễm điện thì thanh kim loại nhiễm điện cùng dấu với điện tích của quả cầu"',
-        A: 'Nhiễm điện do hưởng ứng',
-        B: 'Nhiễm điện do cọ xát',
-        C: 'Nhiễm điện do tiếp xúc',
-        D: 'Nhiễm điện do "vì nó thích thế"',
-        answer: 'C'
-    }
-
     return (
         <LayoutArticle>
             <p className="heading">Tương tác từ - Định luật Ampère </p>
@@ -33,10 +24,18 @@ export default function Post() {
         <p>Lực tương tác giữa hai phần tử dòng điện này tuân theo định luật Ampère: lực từ do phần tử dòng điện <InlineMath math='I_1\overrightarrow{d\ell_1}'></InlineMath> tác dụng lên phần tử dòng điện <InlineMath  math='I_2\overrightarrow{d\ell_2}'></InlineMath> là một vectơ  <InlineMath math='d\overrightarrow F'></InlineMath> có:</p>
         <p>+ Phương: vuông góc với mặt phẳng chứa yếu tố dòng <InlineMath  math='I_2\overrightarrow{d\ell_2}'></InlineMath> và vecto <InlineMath math='\overrightarrow n'></InlineMath></p>
         <p>+ Chiều: xác định theo quy tắc cái định ốc &quot;xoay cái đinh ốc từ <InlineMath  math='I_2\overrightarrow{d\ell_2}'></InlineMath> đến vectơ <InlineMath math='\overrightarrow n'></InlineMath> theo góc nhỏ nhất thì chiều tiến của cái đinh ốc là chiều của vectơ <InlineMath math='d\overrightarrow F'></InlineMath>&quot;</p>
+        <p>+ Độ lớn: <InlineMath math='dF = \frac{\mu_0I_1I_2d\ell_1d\ell_2\sin{\theta_1}\sin{\theta_2}}{4\pi r^2}'></InlineMath> (4.1)</p>
+        <p>+ Điểm đặt: tại yếu tố dòng <InlineMath math='I_2\overrightarrow{dl_2}'></InlineMath></p>
+        <p>Trong (4.1), <InlineMath math='\mu_0'></InlineMath> là hằng số từ, có giá trị: <InlineMath math='\mu_0 = 4\pi .10^{-7} H/m'></InlineMath></p>
+        <p>Thực nghiệm chứng tỏ rằng, nếu hai dòng điện và I2 đặt trong môi trường đồng chất đẳng hướng thì lực từ tăng  <InlineMath math='\mu'></InlineMath> lần so với khi chúng đặt trong chân không:</p>
+        <p><InlineMath math='d\overrightarrow F = \mu .d\overrightarrow F_{ck} = \frac{\mu_0 \mu}{4\pi} \frac{I_2\overrightarrow{d\ell_2}\times (I_1\overrightarrow{d\ell_1} \times \overrightarrow r) }{r^3}'></InlineMath></p>
+        <p>Hệ số  <InlineMath math='\mu'></InlineMath> được gọi là hệ số từ thẩm hay độ từ thẩm của môi trường. Đối với chân không thì <InlineMath math='\mu = 1'></InlineMath> ; các chất sắt từ thì  <InlineMath math='\mu > > 1'></InlineMath> ; đối với các chất thuận từ hoặc nghịch từ giá trị <InlineMath math='\mu'></InlineMath> dao động hơn kém xung quanh đơn vị một lượng nhỏ ( <InlineMath math='\mu \approx 1'></InlineMath>) . Vì thế, trong đa số các trường hợp, ta bỏ qua hệ số <InlineMath math='\mu'></InlineMath></p>
+        <p>Về hình thức, điện và từ giống như hai bàn tay của một cơ thể người. Mỗi đại lượng đặc trưng cho điện đều tương ứng với một đại lượng đặc trưng cho từ. Ví dụ: hằng số điện  <InlineMath math='\varepsilon_0'></InlineMath> tương ứng với hằng số từ <InlineMath math='\mu_0'></InlineMath> ; hệ số điện môi <InlineMath math='\varepsilon'></InlineMath> tương ứng với hệ số từ thẩm <InlineMath math='\mu'></InlineMath> ; định luật Ampère có vai trò như định luật Coulomd; yếu tố dòng điện <InlineMath math='I\overrightarrow{d\ell}'></InlineMath> 
+        có vai trò như điện tích điểm q, … Nắm được tính chất này, ta sẽ tìm hiểu từ trường một cách hiệu quả hơn.</p>
+        
         
         
         <p>Nguồn: <a href='https://vatlydaicuong.com/tuong-tac-tu-dinh-luat-ampere' target='_blank' rel="noreferrer">vatlydaicuong</a></p>
-        <QuizBox quiz={quiz}/>
         </LayoutArticle>
     )
 }
