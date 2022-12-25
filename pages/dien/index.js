@@ -20,6 +20,10 @@ export default function Dien() {
                 <ul className="list-disc ml-5">
                     <li className="my-3"><Link href='dien/tai-lieu-them/tom-tat' className="hover:border-blue hover:text-blue p-1 border-2 border-transparent">Tóm tắt công thức</Link></li>
                 </ul>
+                <h3 className="text-3xl ">Video</h3>
+                <ul className="list-disc ml-5">
+                    <li className="my-3"><Link href='dien/bai-giang/video-dien-truong' className="hover:border-blue hover:text-blue p-1 border-2 border-transparent">Điện trường</Link></li>
+                </ul>
         </main>
         </Layout>
     )

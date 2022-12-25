@@ -1,9 +1,7 @@
-import Layout from "../../../components/Layout"
 import Image from "next/image"
 import QuizBox from "../../../components/QuizBox";
 import 'katex/dist/katex.min.css';
 import { InlineMath, BlockMath } from 'react-katex';
-import Path from "../../../components/Path";
 import LayoutArticle from "../../../components/LayoutArticle";
 
 export default function Post() {
