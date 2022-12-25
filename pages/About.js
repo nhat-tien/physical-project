@@ -73,7 +73,7 @@ export default function About() {
                     </div>
                     <div className="mt-8 p-4">
                         <h5 className="font-bold text-xl text-center">Đào Duy Thành</h5>
-                        <p className="text-center">Trưởng phòng tài chính</p>
+                        <p className="text-center">Trưởng phòng Marketing</p>
                     </div>
                 </div>
                 <div className="flex flex-col rounded-lg max-w-md shadow-lg w-48">
